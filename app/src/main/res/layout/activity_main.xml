@@ -10,16 +10,79 @@
 
     <ImageView
         android:id="@+id/img_logo"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
         android:src="@drawable/logo"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"/>
 
     <TextView
+        android:id="@+id/tv_forgotPassword"
+        android:layout_below="@id/img_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_below="@id/img_logo"
-        android:layout_centerHorizontal="true"/>
+        android:text="Forgot Your Password"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <!-- Add a horizontal line below the TextView -->
+    <View
+        android:id="@+id/v_line"
+        android:layout_below="@id/tv_forgotPassword"
+        android:layout_width="140dp"
+        android:layout_height="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="#00BBC4" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_below="@id/v_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your email address. You will receive a link to create a new password via email."
+        android:textColor="#064D5A"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_below="@id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_below="@id/tv_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="text@gmail.com"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <Button
+        android:id="@+id/btn_forgetPassword"
+        android:layout_below="@id/et_email"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#00BBC4"/>
+
 
 </RelativeLayout>
